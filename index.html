@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pragati Prakash - UI/UX Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+    
+    <style>
+      :root {
+        --bg-dark: #0e0e10;
+        --bg-dark-secondary: #1c1c1f;
+        --neon-green: #00ff9d;
+        --neon-blue: #00cfff;
+        --white: #fff;
+        --gray: #aaa;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Outfit", sans-serif;
+        background-color: var(--bg-dark);
+        color: var(--white);
+      }
+
+      /* NAVIGATION */
+      nav {
+        background-color: var(--bg-dark-secondary);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 8px rgba(0, 255, 157, 0.1);
+      }
+
+      nav .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--neon-green);
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      nav ul li a {
+        color: var(--white);
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: var(--neon-green);
+      }
+
+      .btn {
+        background-color: var(--neon-green);
+        color: #000;
+        border: none;
+        padding: 0.7rem 1.2rem;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #00d98b;
+      }
+
+      /* HERO */
+      .hero {
+        text-align: center;
+        padding: 4rem 1rem;
+        background: radial-gradient(circle at top right, #1f1f1f, #0f0f0f);
+      }
+
+      .hero img {
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+        border: 4px solid var(--neon-green);
+      }
+
+      .hero h2 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        color: var(--neon-green);
+      }
+
+      .hero p {
+        color: var(--gray);
+        max-width: 600px;
+        margin: 1rem auto;
+        font-size: 1.1rem;
+      }
+
+      .hero .btn {
+        margin-top: 1rem;
+      }
+
+      section {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: var(--bg-dark-secondary);
+        border-radius: 10px;
+      }
+
+      h3 {
+        color: var(--neon-blue);
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.2rem;
+      }
+
+      .service-box {
+        background-color: var(--bg-dark);
+        padding: 1rem;
+        border-left: 4px solid var(--neon-green);
+        border-radius: 6px;
+      }
+
+      /* CONTACT */
+      .socials a {
+        color: var(--green);
+        font-size: 0.6rem;
+        margin-right: 1rem;
+        transition: color 0.3s;
+      }
+
+      .socials a:hover {
+        color: var(--neon-green);
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        background-color: #000;
+        color: var(--gray);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="logo">Pragati</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.pdf" download class="btn">Download CV</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <img
+        src="30s_businesswoman_in_white_background___Premium_AI-generated_PSD-removebg-preview.png"
+        alt="Pragati photo"
+      />
+      <h2>Hello, I'm Pragati</h2>
+      <p>
+       Final-year B.Tech student & Web Developer intern turning bold ideas into pixel-perfect, user-centric experiences.
+      </p>
+      <a href="Resume_final.pdf" class="btn" download>Download CV</a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+      <h3>About Me</h3>
+      <p>
+        I’m a passionate and motivated final-year B.Tech student from Solapur,
+        Maharashtra. I have recently completed my final semester exams and am
+        currently gaining practical experience as a Web Developer Intern at Mass
+        IT Solution, where I collaborate closely with both the Digital Marketing
+        team and the UI/UX Design team. My interests lie in creating modern,
+        user-centric digital experiences, and I’m constantly exploring new tools
+        and technologies to improve my craft. This internship has allowed me to
+        contribute to live projects while strengthening my skills in responsive
+        web design, user interface design, and cross-functional teamwork.
+      </p>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+  <h3>Services</h3>
+  <div class="services-grid">
+    <div class="service-box">
+      <h4>UI & UX Design</h4>
+      <p>
+        Designing intuitive experiences and clean interfaces that enhance
+        usability.
+      </p>
+    </div>
+    <div class="service-box">
+      <h4>Graphic Design</h4>
+      <p>
+        Creating visually compelling graphics, branding, and visual
+        storytelling.
+      </p>
+    </div>
+    <div class="service-box">
+      <h4>Web Design</h4>
+      <p>Responsive websites tailored for performance and accessibility.</p>
+    </div>
+    <div class="service-box fresher-box">
+      <h4>Fresher's Edge</h4>
+      <p>
+        As a passionate fresher, I bring fresh ideas, eagerness to learn, and a
+        commitment to deliver quality work. Ready to take on new challenges and
+        grow with every project.
+      </p>
+    </div>
+     <div class="service-box">
+      <h4>Digital Marketing</h4>
+      <p>
+        Leveraging social media, SEO, and online campaigns to boost brand
+        awareness and engagement.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <h3>Contact</h3>
+      <p>📧 pragatiprakash28@gmail.com.com</p>
+      <p>📱 +91-8768055638</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/pragati-kamale-876160235/">   <i class="fab fa-linkedin">  linkedin</i></a><br>
+        <!-- <a href="#"><i class="fab fa-dribbble"></i></a> -->
+        <a href="https://github.com/KamalePragati1977">   <i class="fab fa-github">  Github</i></a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      &copy; 2025 Pragati Prakash — Designed with passion and pixel perfection.
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
